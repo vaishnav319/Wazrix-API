@@ -1,4 +1,6 @@
+<!--Inclusion of header file i.e navbar-->
 <%- include("header")%>
+<!--Table for displaying values -->
     <div class="box">
       <table cellspacing="0">
         <th class="nothing">#</th>
@@ -16,13 +18,10 @@
           <td class="nothing"><%= data[keys[i]].volume %></td>
            <td   class="nothing"><%= data[keys[i]].base_unit %></td>
         </tr>
-
-
-
-
-        <%}%>
+       <%}%>
       </table>
     </div>
+    <!-- For navbar -->
     <script type="text/javascript">
         function togglebar(){
           var x = document.getElementById('menu');
