@@ -1,48 +1,49 @@
-
+<!-- This is header section i.e navbar -->
+<!-- this website is responsive In small screens navbar toggles as menu button and also normal desktop
+screens can see columns-number,name,last,buy/sell price, but smaller screens can only see name,last,buy/sell price-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Wazirix-API</title>
+    <!-- CSS file link-->
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn for icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-
   </head>
 
 
   <body>
     <div class="nav-bar">
-      <span class="logo">
-          <a href="#"><h2>HODLINFO <small>.com</small></h2>
-          <p class="logo-desc">Powered By <span class="desc">Finstreet</span></p></a>
-     </span>
-     <span class="drop1">
-            <select  id="dropdown1">
-              <option >BTC</option>
-              <option >XRP</option>
-              <option >ETH</option>
-              <option >TRX</option>
-            </select>
-    </span>
-    <span class="drop2">
-            <select  id="dropdown2">
-              <option >INR</option>
-
-            </select>
-  </span>
-        <div class="menu-right">
-        <span onclick="togglebar()"><i class="fas fa-bars"></i></span>
+          <span class="logo">
+              <a href="#"><h2>HODLINFO <small>.com</small></h2>
+              <p class="logo-desc">Powered By <span class="desc">Finstreet</span></p></a>
+         </span>
+         <span class="drop1">
+                <select  id="dropdown1">
+                  <option >BTC</option>
+                  <option style="color:black">XRP</option>
+                  <option style="color:black">ETH</option>
+                  <option style="color:black">TRX</option>
+                </select>
+        </span>
+        <span class="drop2">
+                <select  id="dropdown2">
+                  <option >INR</option>
+                </select>
+        </span>
+      <div class="menu-right">
+        <span onclick="togglebar()">
+          <i class="fas fa-bars"></i>
+        </span>
         <ul id="menu">
-
-          <li>  <span class="right-num">58</span></li>
-          <li>  <a type="button" href="https://telegram.org/" class="telegram-id"><i class="fab fa-telegram-plane"></i>Connect telegram</a></li>
-          <li><label class="switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
-             </label>
-          </li>
+            <li>  <span class="right-num">58</span></li>
+            <li>  <a type="button" href="https://telegram.org/" class="telegram-id"><i class="fab fa-telegram-plane"></i>Connect telegram</a></li>
+            <li><label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+               </label>
+            </li>
         </ul>
-
-
-        </div>
+     </div>
     </div>
