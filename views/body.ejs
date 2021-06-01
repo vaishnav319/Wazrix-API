@@ -1,0 +1,38 @@
+<%- include("header")%>
+    <div class="box">
+      <table cellspacing="0">
+        <th class="nothing">#</th>
+        <th>Name</th>
+        <th>Last</th>
+        <th>Buy/Sell price</th>
+        <th class="nothing">Volume</th>
+        <th class="nothing">Base_Unit</th>
+      <%  for(var i=0;i<10;i++){  %>
+        <tr style="background-color:grey;" cell-spacing:0; >
+          <td class="nothing"><%=i+1%></td>
+           <td><%= data[keys[i]].name %></td>
+           <td><%= data[keys[i]].last %></td>
+           <td><%= data[keys[i]].buy %>/<%= data[keys[i]].sell %></td>
+          <td class="nothing"><%= data[keys[i]].volume %></td>
+           <td   class="nothing"><%= data[keys[i]].base_unit %></td>
+        </tr>
+
+
+
+
+        <%}%>
+      </table>
+    </div>
+    <script type="text/javascript">
+        function togglebar(){
+          var x = document.getElementById('menu');
+          if(x.style.display=="block"){
+            x.style.display = "none";
+          }
+          else{
+            x.style.display="block";
+          }
+        }
+    </script>
+  </body>
+  </html>
