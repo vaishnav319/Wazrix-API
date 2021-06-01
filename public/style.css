@@ -243,6 +243,9 @@ td:last-child { border-bottom-right-radius: 10px; }
 
 
 @media only screen and (min-width:701px){
+    ul{
+    display: block !important;
+  }
   span i{
     display:none !important;
   }
